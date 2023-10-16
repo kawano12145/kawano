@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.easy-button {
+  padding: 8px 16px;
+  background-color: #467ef7;
+  color: white;
+  border-radius: 4px;
+  font: bold;
+  margin-left: 40px;
+}
+
+.easy-button:hover {
+  background-color: #386ad6;
+}
+
+html,
+body {
+  /* 滑らかにスクロール */
+  scroll-behavior: smooth;
+}
+.btn {
+  @apply font-bold py-2 px-4 rounded mx-10;
+}
+
+.btn-blue {
+  @apply bg-blue-500  text-white hover:bg-blue-600;
+}
+
+.sencondary {
+  @apply text-2xl font-bold;
+}
+
+.sencondary::before {
+  content: "";
+  @apply block w-10 h-2 bg-theme rounded-full mb-1;
+}
+
+.section-paragram {
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
+
+.badge {
+  @apply px-4 py-2 text-sm bg-badge;
+}
